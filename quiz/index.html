@@ -1,7 +1,10 @@
 <!doctype html><html lang=tr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
 <title>99 Soruda Kur'an'ı Ne Kadar Tanıyorsun? · Ayetlerden Dersler</title>
 <meta name=description content="Her soruda bir bilgi, her ayette bir ders. 6 bölüm, 99 soru, Diyanet mealiyle.">
+<link rel=manifest href=../manifest.json>
+<meta name=theme-color content="#0b1f4d">
 <link rel=icon href=../icon.svg>
+<link rel=apple-touch-icon href=../apple-touch-icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Serif+4&display=swap" rel=stylesheet>
 <style>
 :root{--navy:#0b1f4d;--blue:#1d4ed8;--red:#c8102e;--ink:#1e293b;--mut:#64748b;--ok:#15803d}
@@ -86,4 +89,5 @@ addEventListener('keydown',e=>{if(!st||e.ctrlKey||e.metaKey||e.altKey)return;con
 if(m!==undefined&&!st.done&&st.i<st.qs.length&&document.querySelector('.opt')){e.preventDefault();pick(m)}
 else if(e.key==='Enter'&&st.done&&document.getElementById('nx')&&document.activeElement.id!=='mn'&&document.activeElement.id!=='nx'){e.preventDefault();next()}});
 addEventListener('hashchange',()=>{if(location.hash==='#hizli')start(-2)});if(location.hash==='#hizli')start(-2);else menu()})();
-</script></body></html>
+</script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('../sw.js')}</script></body></html>
